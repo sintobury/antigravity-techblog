@@ -1,0 +1,59 @@
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+[data-theme='light'] .card {
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+}
+
+.meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #737373;
+    margin-bottom: 1rem;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+}
+
+.views::before {
+    content: '👁️';
+    margin-right: 0.25rem;
+    font-size: 0.8em;
+}
+
+.excerpt {
+    color: #a1a1aa;
+    line-height: 1.6;
+}
+
+[data-theme='light'] .excerpt {
+    color: #4b5563;
+}
