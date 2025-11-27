@@ -96,6 +96,56 @@
 .content ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+.content code {
+    background: #262626;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--primary-hover);
+}
+
+[data-theme='light'] .content code {
+    background: #f3f4f6;
+    color: #db2777;
+}
+
+.content pre {
+    background: #0a0a0a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+}
+
+[data-theme='light'] .content pre {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+}
+
+.content pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.95em;
+}
+
+[data-theme='light'] .content pre code {
+    background: transparent;
+    color: #334155;
+}
+
+.content blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
     color: #a1a1aa;
 }
