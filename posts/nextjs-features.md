@@ -1,13 +1,3 @@
----
-title: 'Deep Dive into Next.js 14 Features'
-date: '2023-11-27'
-excerpt: 'A comprehensive look at the latest features in Next.js 14, including Server Actions, Partial Prerendering, and more.'
----
-
-Next.js 14 brings a host of new features and improvements that streamline the development of modern web applications. In this post, we'll explore some of the key additions.
-
-## Server Actions
-
 Server Actions allow you to run asynchronous code directly on the server. They eliminate the need to create API endpoints for simple data mutations.
 
 ### How it Works

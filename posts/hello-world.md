@@ -1,13 +1,3 @@
----
-title: 'Getting Started with Next.js'
-date: '2023-11-26'
-excerpt: 'Learn how to build a modern web application with Next.js and React.'
----
-
-Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.
-
-## Main Features
-
 ### Routing
 A file-system based router built on top of Server Components that supports layouts, nested routing, loading states, error handling, and more.
 

@@ -8,6 +8,7 @@ export default function PostCard({ post }) {
             <Link href={`/blog/${post.id}`} className={styles.link}>
                 <h2 className={styles.title}>{post.title}</h2>
                 <div className={styles.meta}>
+                    <span className={styles.category}>{post.category}</span>
                     <time className={styles.date}>{post.date}</time>
                     <span className={styles.views}>
                         <ViewCounter slug={post.id} />

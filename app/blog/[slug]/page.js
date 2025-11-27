@@ -24,6 +24,7 @@ export default async function Post({ params }) {
         <div className={styles.container}>
             <article className={styles.article}>
                 <header className={styles.header}>
+                    <div className={styles.category}>{postData.category}</div>
                     <h1 className={styles.title}>{postData.title}</h1>
                     <div className={styles.meta}>
                         <time className={styles.date}>{postData.date}</time>

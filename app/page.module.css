@@ -1,30 +1,46 @@
-.hero {
-  text-align: center;
-  padding: 6rem 0 4rem;
-  margin-bottom: 2rem;
-}
-
-.title {
-  font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #fff, #a1a1aa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -0.04em;
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  color: #a1a1aa;
-  max-width: 600px;
+.main {
+  padding: 4rem 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  line-height: 1.6;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: #a1a1aa;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filterButton:hover {
+  border-color: var(--primary);
+  color: var(--foreground);
+}
+
+.filterButton.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #000;
+  font-weight: 600;
+}
+
+[data-theme='light'] .filterButton.active {
+  color: #fff;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  padding-bottom: 4rem;
 }
