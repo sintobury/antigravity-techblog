@@ -1,0 +1,18 @@
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 3rem 0;
+    margin-top: 4rem;
+    background: var(--secondary);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.text {
+    color: #737373;
+    font-size: 0.9rem;
+}
