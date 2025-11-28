@@ -9,17 +9,21 @@ export default function TableOfContents({ headings }) {
     useEffect(() => {
         const handleScroll = () => {
             const headingElements = headings.map((heading) => document.getElementById(heading.id));
-            const scrollPosition = window.scrollY + 150; // Offset for header
-
             let currentActiveId = '';
 
+            // Find the first heading that is currently visible in the viewport
             for (const element of headingElements) {
-                if (element && element.offsetTop < scrollPosition) {
-                    currentActiveId = element.id;
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    // Check if the top of the heading is within the viewport
+                    if (rect.top >= 0 && rect.top < window.innerHeight) {
+                        currentActiveId = element.id;
+                        break; // Found the top-most visible heading
+                    }
                 }
             }
 
-            // If we're at the very top, highlight the first item
+            // If we're at the very top, always highlight the first item
             if (window.scrollY < 50 && headings.length > 0) {
                 currentActiveId = headings[0].id;
             }
