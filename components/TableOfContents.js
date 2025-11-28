@@ -7,31 +7,31 @@ export default function TableOfContents({ headings }) {
     const [activeId, setActiveId] = useState('');
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveId(entry.target.id);
-                    }
-                });
-            },
-            { rootMargin: '0% 0% -80% 0%' }
-        );
+        const handleScroll = () => {
+            const headingElements = headings.map((heading) => document.getElementById(heading.id));
+            const scrollPosition = window.scrollY + 150; // Offset for header
 
-        headings.forEach((heading) => {
-            const element = document.getElementById(heading.id);
-            if (element) {
-                observer.observe(element);
+            let currentActiveId = '';
+
+            for (const element of headingElements) {
+                if (element && element.offsetTop < scrollPosition) {
+                    currentActiveId = element.id;
+                }
             }
-        });
+
+            // If we're at the very top, highlight the first item
+            if (window.scrollY < 50 && headings.length > 0) {
+                currentActiveId = headings[0].id;
+            }
+
+            setActiveId(currentActiveId);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check
 
         return () => {
-            headings.forEach((heading) => {
-                const element = document.getElementById(heading.id);
-                if (element) {
-                    observer.unobserve(element);
-                }
-            });
+            window.removeEventListener('scroll', handleScroll);
         };
     }, [headings]);
 
