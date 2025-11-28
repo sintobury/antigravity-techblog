@@ -2,7 +2,7 @@
 title: 'Next.js 시작하기'
 date: '2023-11-26'
 excerpt: 'Next.js와 React로 모던 웹 애플리케이션을 만드는 방법을 알아봅니다.'
-category: 'Project Log'
+category: '프로젝트'
 ---
 
 Next.js는 풀스택 웹 애플리케이션을 구축하기 위한 React 프레임워크입니다. 사용자 인터페이스를 구축하기 위해 React Component를 사용하고, 추가적인 기능과 최적화를 위해 Next.js를 사용합니다.

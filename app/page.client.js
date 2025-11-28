@@ -7,7 +7,7 @@ import styles from './page.module.css';
 export default function HomeClient({ posts }) {
     const [selectedCategory, setSelectedCategory] = useState('All');
 
-    const categories = ['All', 'Development Info', 'Algorithm Problem Solving', 'Project Log'];
+    const categories = ['All', 'Next.js', '문제풀이', '프로젝트'];
 
     const filteredPosts = selectedCategory === 'All'
         ? posts

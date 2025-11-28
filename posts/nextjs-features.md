@@ -2,7 +2,7 @@
 title: 'Next.js 14 기능 심층 분석'
 date: '2023-11-27'
 excerpt: 'Server Actions, Partial Prerendering 등 Next.js 14의 최신 기능을 살펴봅니다.'
-category: 'Development Info'
+category: 'Next.js'
 ---
 
 Next.js 14는 모던 웹 애플리케이션 개발을 간소화하는 다양한 새로운 기능과 개선 사항을 제공합니다. 이 글에서는 주요 추가 사항 중 일부를 살펴보겠습니다.

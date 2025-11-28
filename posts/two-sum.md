@@ -2,7 +2,7 @@
 title: 'Two Sum 문제 풀이'
 date: '2023-11-15'
 excerpt: 'Hash Map을 사용하여 O(n) 시간 복잡도로 고전적인 Two Sum 알고리즘 문제를 해결하는 방법을 자세히 알아봅니다.'
-category: 'Algorithm Problem Solving'
+category: '문제풀이'
 ---
 
 ## 문제 설명
